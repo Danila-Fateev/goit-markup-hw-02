@@ -90,7 +90,7 @@ body {
   box-sizing: border-box;
 }
 
-.title {
+.item-title {
   color: var(--main-color);
   font-weight: 700;
   font-size: 18px;
