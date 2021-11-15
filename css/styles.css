@@ -1,0 +1,106 @@
+:root {
+  --header-bg-color: #ffffff;
+  --main-bg-color: #e5e5e5;
+  --footer-bg-color: #2f303a;
+  --main-color: #212121;
+  --secondary-color: #2196f3;
+  --btn-bg-color: #f5f4fa;
+}
+
+body {
+  font-family: Roboto;
+}
+
+.header {
+  background-color: var(--header-bg-color);
+}
+
+.main {
+  background-color: var(--main-bg-color);
+}
+
+.footer {
+  background-color: var(--footer-bg-color);
+}
+
+.list {
+  list-style: none;
+}
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.site-nav .link {
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.link.current {
+  color: var(--secondary-color);
+}
+
+.contacts {
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.link:hover,
+.link:focus {
+  text-decoration: underline;
+  color: var(--secondary-color);
+}
+
+.btn {
+  background-color: var(--btn-bg-color);
+  color: var(--main-color);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+}
+
+.btn.current {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+}
+
+.list-item {
+  background-color: var(--header-bg-color);
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.title {
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.text {
+  color: #757575;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
