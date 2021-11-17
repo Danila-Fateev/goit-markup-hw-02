@@ -54,6 +54,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  font-style: normal;
 }
 
 .btn {
@@ -102,6 +103,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--bg-color);
+  font-style: normal;
 }
 
 .address > .link {
