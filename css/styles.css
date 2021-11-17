@@ -1,10 +1,11 @@
 :root {
-  --header-bg-color: #ffffff;
-  --main-bg-color: #e5e5e5;
+  --bg-color: #ffffff;
   --footer-bg-color: #2f303a;
   --main-color: #212121;
-  --secondary-color: #2196f3;
+  --accent-color: #2196f3;
   --btn-bg-color: #f5f4fa;
+  --potfolio-txt-color: #757575;
+  --hero-bg-color: #2f303a;
 }
 
 body {
@@ -12,11 +13,7 @@ body {
 }
 
 .header {
-  background-color: var(--header-bg-color);
-}
-
-.main {
-  background-color: var(--main-bg-color);
+  background-color: var(--bg-color);
 }
 
 .footer {
@@ -28,10 +25,11 @@ body {
 }
 .logo {
   font-family: Raleway, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  color: var(--accent-color);
 }
 
 .link {
@@ -47,17 +45,11 @@ body {
 }
 
 .link.current {
-  color: var(--secondary-color);
-}
-
-.link:hover,
-.link:focus {
-  text-decoration: underline;
-  color: var(--secondary-color);
+  color: var(--accent-color);
 }
 
 .contacts {
-  color: #757575;
+  color: var(--potfolio-txt-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -75,22 +67,22 @@ body {
 }
 
 .btn:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--accent-color);
   color: #ffffff;
 }
 
 .btn.current {
-  background-color: var(--secondary-color);
+  background-color: var(--accent-color);
   color: #ffffff;
 }
 
-.list-item {
-  background-color: var(--header-bg-color);
+.item.portfolio {
+  background-color: var(--bg-color);
   border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
 
-.item-title {
+.title.portfolio {
   color: var(--main-color);
   font-weight: 700;
   font-size: 18px;
@@ -98,9 +90,99 @@ body {
   letter-spacing: 0.06em;
 }
 
-.text {
-  color: #757575;
+.text.portfolio {
+  color: var(--potfolio-txt-color);
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+}
+
+.link.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--bg-color);
+}
+
+.address > .link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.studio {
+  color: var(--main-color);
+}
+
+.footer .studio {
+  color: var(--bg-color);
+}
+
+.link:focus,
+.link:hover {
+  color: var(--accent-color);
+}
+
+.hero {
+  background-color: var(--hero-bg-color);
+}
+
+.headline.hero {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bg-color);
+}
+
+.advantage.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.advantage.text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--potfolio-txt-color);
+}
+
+.headline {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.team.title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+.team.text {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--potfolio-txt-color);
+}
+
+.team.item {
+  border: 1px solid #eeeeee;
 }
