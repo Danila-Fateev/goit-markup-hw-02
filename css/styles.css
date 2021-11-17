@@ -66,14 +66,15 @@ body {
   letter-spacing: 0.03em;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--bg-color);
 }
 
 .btn.current {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--bg-color);
 }
 
 .item.portfolio {
@@ -98,7 +99,6 @@ body {
 }
 
 .link.address {
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -106,7 +106,6 @@ body {
 }
 
 .address > .link {
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
