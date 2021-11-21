@@ -14,6 +14,7 @@ body {
 
 .header {
   background-color: var(--bg-color);
+  display: flex;
 }
 
 .footer {
@@ -30,6 +31,8 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  margin-right: 93px;
+  align-items: center;
 }
 
 .link {
@@ -65,6 +68,7 @@ body {
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
+  border-radius: 4px;
 }
 
 .btn:hover {
@@ -127,6 +131,7 @@ body {
 }
 
 .hero {
+  margin: 0;
   background-color: var(--hero-bg-color);
 }
 
@@ -137,6 +142,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--bg-color);
+  margin-bottom: 30px;
 }
 
 .advantage.title {
@@ -162,10 +168,24 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  margin-bottom: 50px;
 }
 
 .team {
   background-color: #f5f4fa;
+}
+
+.list.team {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.team .container {
+  padding-top: 94px;
+}
+
+.team.headline {
+  margin-bottom: 50px;
 }
 
 .team.title {
@@ -174,6 +194,8 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  background-color: var(--bg-color);
+  text-align: center;
 }
 
 .team.text {
@@ -181,8 +203,107 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--potfolio-txt-color);
+  background-color: var(--bg-color);
+  text-align: center;
 }
 
 .team.item {
   border: 1px solid #eeeeee;
+  background-color: var(--bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  min-width: 270px;
+  min-height: 368px;
+  margin-bottom: 93px;
+}
+
+.team.item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav.list {
+  display: flex;
+}
+
+.site-nav.item {
+  margin-right: 50px;
+  align-items: center;
+}
+
+.item.contacts {
+  margin-right: 50px;
+}
+
+.list.contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.header {
+  height: 80px;
+}
+
+.hero .btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
+  min-height: 50px;
+}
+
+.hero .container {
+  padding-bottom: 200px;
+  padding-top: 200px;
+  margin-bottom: 94px;
+}
+
+.advantage.list {
+  display: flex;
+}
+
+.advantage.item {
+  margin-bottom: 94px;
+}
+
+.advantage.item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.list.picture {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item.picture {
+  margin-bottom: 94px;
+}
+
+.item.picture:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .logo {
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+.item.address {
+  margin-bottom: 9px;
 }
