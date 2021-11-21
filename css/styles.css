@@ -6,15 +6,28 @@
   --btn-bg-color: #f5f4fa;
   --potfolio-txt-color: #757575;
   --hero-bg-color: #2f303a;
-}
+  --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --portfolio-card-gap: 29px;
+  }
 
 body {
   font-family: Roboto, sans-serif;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.header .header-content {
+  display: flex;
+  height: 80px;
+}
+
 .header {
   background-color: var(--bg-color);
-  display: flex;
+  border: 1px solid #ececec;
 }
 
 .footer {
@@ -81,25 +94,7 @@ body {
   color: var(--bg-color);
 }
 
-.item.portfolio {
-  background-color: var(--bg-color);
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-}
 
-.title.portfolio {
-  color: var(--main-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.text.portfolio {
-  color: var(--potfolio-txt-color);
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
 }
 
 .link.address {
@@ -211,8 +206,7 @@ body {
   border: 1px solid #eeeeee;
   border-radius: 4px;
   background-color: var(--bg-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--card-shadow);
   min-width: 270px;
   min-height: 368px;
   margin-bottom: 93px;
@@ -250,10 +244,6 @@ nav {
   display: flex;
   margin-left: auto;
   align-items: center;
-}
-
-.header {
-  height: 80px;
 }
 
 .hero .btn {
@@ -308,3 +298,49 @@ nav {
 .item.address {
   margin-bottom: 9px;
 }
+
+section.portfolio {
+  padding-top: 94px;
+  margin-bottom: 94px;
+}
+
+.list.portfolio-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: auto;
+}
+
+.portfolio-btn > .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.list.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--portfolio-card-gap));
+  margin-top: calc(-1 * var(--portfolio-card-gap));
+  margin-bottom: 0px;
+}
+
+.item.portfolio {
+  background-color: var(--bg-color);
+  margin-left: var(--portfolio-card-gap);
+  margin-top: var(--portfolio-card-gap);
+  flex-basis: calc(100%/3 - var(--portfolio-card-gap));
+  border: 1px solid #EEEEEE;
+}
+
+.title.portfolio {
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 18px;  
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.text.portfolio {
+  color: var(--potfolio-txt-color);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
